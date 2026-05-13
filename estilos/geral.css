@@ -1,0 +1,120 @@
+body {
+  background-color:lightblue;
+}
+
+#tabela {
+  width:100%;  
+  display: flex; 
+}
+
+#fundo {
+ width:100%;  
+  display: flex;
+  min-height: 600px;  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: left;   
+}
+
+h2 {
+	margin-left: 1em;
+}	 
+
+footer {
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  font-size: 100%;
+  float:inline-end;
+  color: red;  
+  background-color: black;
+  position: fixed;
+}
+
+#cabecalho {
+  background-color:lightblue;
+  color:darkblue  ;
+  display:block;
+  justify-content: center;
+}
+
+#titulo {
+  text-align: center;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 350%;  
+  font-family: cursive;
+  float:inline-start;
+}
+
+#foto {
+  float: left;
+}
+
+#cumprimento, #sexta, #agenda, #tarefas, #email, #chat, #teams, #documentos{  
+  font-size: 150%;
+}
+
+#mensagem {
+  width: 100%;
+  height: 200%;
+  text-align: left;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: cursive;
+}
+
+#icone {
+  text-align: center;
+  font-weight:bolder;
+  color: red;
+  background-color: white;
+}
+
+#col1 {
+  width: auto;
+  float: left;  
+}
+
+#col2 {
+  width: auto;
+  float: left;  
+}
+
+#col3 {
+  width: auto;
+  float: left; 
+}
+
+#col4 {
+  width: auto;
+  float: left;  
+}   
+
+#col5 {
+  width: auto;
+  float: left;  
+}   
+
+#col6 {
+  width: auto;
+  float: left;  
+}
+
+#col0 {
+  width: 9.35%;
+}
+
+#col00 {
+  width: 2.50%;
+}

@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Organizador de Links">
+	<meta name="author" content="Alexandre Barbosa">
+	<meta http-equiv="refresh" content="300">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+
+    <title id="nomeGuia"></title>
+    <script language=javascript type="text/javascript">
+        function relogio() {
+            let data = new Date().toLocaleDateString();
+            let hora = new Date().toTimeString(); 
+            return data + " " + hora; 
+        }                
+       
+        function atualizaTitulo () {
+            let dataHora = relogio();
+            document.getElementById("nomeGuia").innerHTML = dataHora;
+        }
+
+        setInterval(atualizaTitulo, 500);
+    </script>
+
+    <link rel="icon" href="imagens/Foto.PNG" sizes="any">
+    <link rel="stylesheet" href="estilos/geral.css"></link>
+
+    <span id="papel"> </span> 
+
+    <script>	
+        let numPapel = Math.random();
+        if(numPapel >= 0.9163) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/1.css"></link>';
+        }else if (numPapel >= 0.8333) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/2.css"></link>';
+        }else if (numPapel >= 0.7479) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/3.css"></link>';        
+        }else if (numPapel >= 0.6664) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/4.css"></link>';        
+        }else if (numPapel >= 0.5831) {
+                document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/5.css"></link>';
+        }else if (numPapel >= 0.4998) {
+                document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/6.css"></link>';
+        }else if (numPapel >= 0.4165) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/7.css"></link>';
+        }else if (numPapel >= 0.3332) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/8.css"></link>';
+        }else if (numPapel >= 0.2499) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/9.css"></link>';
+        }else if (numPapel >= 0.1666) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/10.css"></link>';
+        }else if (numPapel >= 0.0833) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/11.css"></link>';
+        }else if (numPapel >= 0.0500) {
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/12.css"></link>';
+        }else{
+            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/13.css"></link>';
+        }    
+    </script>    
+</head>    
+<body>
+    <div id="cabecalho">
+       
+        <p>
+            <h1 id="titulo">
+                Espaço de Trabalho               
+            </h1> 
+        </p>      
+              
+        <div id="react-root"></div>
+        <div id="react2"></div>
+        <div id="dia-semana"></div>
+
+        <script>
+            const root = ReactDOM.createRoot(document.getElementById("react-root"));
+            root.render(
+                React.createElement("h5", null, "React integrado ao site existente"));
+            const raiz = ReactDOM.createRoot(document.getElementById("react2"));
+            raiz.render(
+                React.createElement("h5", null, "Integrei o React de novo"));
+                
+            const diasSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+            let hoje = new Date();            
+            const diasDaSemana =  ReactDOM.createRoot(document.getElementById("dia-semana"));
+            diasDaSemana.render(
+                React.createElement("h5", null, "Hoje é: "+ diasSemana[hoje.getDay()]));            
+        </script>
+
+        <p>
+            <span id="imagem"></span>                 
+            <span id="cumprimento"></span> 
+            <br>   
+            <span id="agenda" style="color:fuchsia">Agenda &#128073
+                <a href="https://outlook.office.com/calendar" target="_blank"><img src="imagens/agenda.png" width="64" height="48"></a>
+            </span> 
+            <span id="tarefas" style="color:darkorange">Apontamento &#128073
+                <a href="https://vertentesistemas-my.sharepoint.com/:x:/r/personal/higor_fragnani_vertentesistemas_com_br/_layouts/15/Doc.aspx?sourcedoc=%7BA44C48A5-9F6B-4818-A236-A7E712E8FDC7%7D&file=CONTROLE%20DE%20HORAS%202026%20(ALEXANDRE).xlsx&fromShare=true&action=default&mobileredirect=true" target="_blank"><img src="imagens/icones/tarefas.png" width="64" height="48"></a>
+            </span>       
+            <span id="email" style="color:blueviolet"> Emails &#128073
+                <a href="https://outlook.office.com/mail/" target="_blank"><img src="imagens/email.png" width="64" height="48"></a>
+            </span>          
+            <span id="chat" style="color:deeppink"> Chat &#128073
+                <a href="https://teams.microsoft.com/l/chat/48:notes/conversations?context=%7B%22contextType%22%3A%22chat%22%7D" target="_blank"><img src="imagens/chat.png" width="64" height="48"></a>
+            </span> 
+            <span id="chat" style="color:black"> Teams &#128073
+                <a href="https://teams.cloud.microsoft/" target="_blank"><img src="imagens/teams.png" width="64" height="48"></a>
+            </span> 
+            <span id="documentos" style="color:darkgreen"> Documentos &#128073
+                <a href="https://vertentesistemas-my.sharepoint.com/" target="_blank"><img src="imagens/Documentos.png" width="64" height="48"></a>
+            </span> 
+            <br>                     
+            <span id="sexta"></span>
+            <span id="sextaImagem"></span>
+        </p>    
+
+        <form style="border: 0.1px dotted darkblue">    
+            <span id="mensagem"></span> 
+        </form>            
+                     
+    <script language=javascript type="text/javascript">
+        let imagem =  document.getElementById('imagem');
+        let parteDoDia = new Date().getHours();
+        if (parteDoDia >= 6 && parteDoDia < 12) {
+            document.getElementById('cumprimento').innerHTML = ' Bom dia Alexandre, &#128578  bom trabalho para você!';
+            document.getElementById('imagem').innerHTML = '<img src="imagens/nascer-do-sol.gif" width="60" height="80">';}
+        else if (parteDoDia >= 12 && parteDoDia < 18) {
+            document.getElementById('cumprimento').innerHTML = ' Boa tarde Alexandre, &#128578 bom trabalho para você!';
+            document.getElementById('imagem').innerHTML = '<img src="imagens/por-do-sol.gif" width="60" height="80">';} 
+        else if (parteDoDia >= 18 && parteDoDia < 24) { 
+            document.getElementById('cumprimento').innerHTML = ' Boa noite Alexandre, &#128578 bom trabalho para você!';
+            document.getElementById('imagem').innerHTML = '<img src="imagens/noite.gif" width="60" height="80">';}
+        else {
+            document.getElementById('cumprimento').innerHTML = ' Boa madrugada Alexandre, &#128578 bom trabalho para você!';
+            document.getElementById('imagem').innerHTML = '<img src="imagens/meia-noite.gif" width="60" height="80">';}   
+        
+        let diaSemana = new Date().getDay();
+        switch (diaSemana) {
+            case 1: 
+                document.getElementById('sexta').innerHTML = ' Hoje é segunda-feira, ótima semana para você! &#128197;';
+                break;
+            case 5: 
+                document.getElementById('sexta').innerHTML = 'Hoje é sexta-feira, bom final de semana!';
+                document.getElementById('sextaImagem').innerHTML = '<img src="imagens/sexta.gif" width="40" height="40">';
+                break;
+            default:
+                document.getElementById('sexta').innerHTML = ''
+                break;
+        }         
+    </script>
+
+    </script>	
+        <script language=javascript type="text/javascript">
+            let numMensagem = Math.random();
+            if(numMensagem >= 0.9) {
+            document.getElementById('mensagem').innerHTML = '<big>Novamente voltei minha atenção para todos os atos de opressão que ocorrem debaixo do sol. Vi as lágrimas dos oprimidos, mas não havia quem os consolasse. Os opressores deles tinham o poder, e não havia quem os consolasse. 2 E declarei felizes as pessoas que já tinham morrido, em vez das que ainda estão vivas. 3 E melhor do que todas elas é aquele que ainda não nasceu, que não viu as ações aflitivas praticadas debaixo do sol. <b>(Eclesiastes 4:1-3)<b></big>';
+            mensagem.style.fontSize="large";
+        }else if (numMensagem >= 0.8) {
+            document.getElementById('mensagem').innerHTML = '<big>16 Não seja justo demais nem excessivamente sábio. Por que deveria causar ruína a si mesmo? 17 Não seja excessivamente mau, nem seja tolo. Por que deveria morrer antes do seu tempo? 18 É melhor seguir um dos conselhos, mas não desconsiderar o outro; pois quem teme a Deus acatará a ambos. <b>(Eclesiastes 9:16-18)<b><big>';
+            mensagem.style.fontSize="large";   
+        }else if (numMensagem >= 0.7) {
+            document.getElementById('mensagem').innerHTML = '<big>18 Porque muita sabedoria traz muita frustração, De modo que aquele que aumenta seu conhecimento aumenta sua dor. <b>(Eclesiastes 1:18)<b></big>';
+            mensagem.style.fontSize="x-large";   
+        }else if (numMensagem >= 0.6) {
+            document.getElementById('mensagem').innerHTML = '<big>13 Depois de se ouvir tudo, a conclusão é esta: tema o verdadeiro Deus e obedeça aos seus mandamentos, pois essa é toda a obrigação do homem. 14 Pois o verdadeiro Deus julgará todas as ações, incluindo todas as coisas ocultas, e determinará se são boas ou más. <b>(Eclesiastes 12:13,14)<b></big>';
+            mensagem.style.fontSize="larger";    
+        }else if (numMensagem >= 0.5) {
+            document.getElementById('mensagem').innerHTML = '<big>6 Não fiquem ansiosos por causa de coisa alguma, mas em tudo, por orações e súplicas, junto com agradecimentos, tornem os seus pedidos conhecidos a Deus; 7 e a paz de Deus, que está além de toda compreensão, guardará o seu coração e a sua mente por meio de Cristo Jesus. <b>(Filipenses 4:6, 7)<b></big>';
+            mensagem.style.fontSize="large";
+        }else if (numMensagem >= 0.4) {
+            document.getElementById('mensagem').innerHTML = '<big>11 E eu vi mais outra coisa debaixo do sol: os velozes nem sempre vencem a corrida, e nem sempre os fortes vencem a batalha; os sábios nem sempre têm alimento, os inteligentes nem sempre têm riquezas, os que têm conhecimento nem sempre têm sucesso; porque o tempo e o imprevisto sobrevêm a todos eles. 12 Pois o homem não sabe a sua hora. Assim como os peixes são apanhados numa rede cruel e os pássaros são apanhados numa armadilha, assim os filhos dos homens são enlaçados na hora da desgraça, quando ela lhes sobrevém de repente. <b>(Eclesiastes 9:11,12)<b></big>';
+            mensagem.style.fontSize="large";
+        }else if (numMensagem >= 0.3) {
+            document.getElementById('mensagem').innerHTML = '<big>17 Mesmo que a figueira não floresça, E não haja fruto nas videiras; Mesmo que a safra da oliveira seja um fracasso, E os campos não produzam alimento; Mesmo que as ovelhas desapareçam do curral, E não haja bois nos estábulos; 18 Ainda assim eu vou exultar em Jeová, Vou me alegrar no Deus da minha salvação. <b>(Habacuque 3:17,18)<b></big>';
+            mensagem.style.fontSize="large";
+        }else if (numMensagem >= 0.2) {
+            document.getElementById('mensagem').innerHTML = '<big>26 O apetite do trabalhador o faz trabalhar arduamente, Pois a fome o impele a fazer isso. <b>(Provérbios 16:26)<b></big>';
+            mensagem.style.fontSize="large";    
+        }else if (numMensagem >= 0.1) {
+            document.getElementById('mensagem').innerHTML = '<big>23 Há proveito em todo tipo de trabalho árduo, Mas ficar só falando leva à pobreza. <b>(Provérbios 14:23)<b></big>';
+            mensagem.style.fontSize="x-large";    
+        }else { 
+            document.getElementById('mensagem').innerHTML = '<big>“Santo, santo, santo é Jeová dos exércitos. A terra inteira está cheia da sua glória.” <b>(Isaias 6:3)<b></big>';
+            mensagem.style.fontSize="x-large";    
+        } 
+        </script>
+
+    <div id="tabela">
+        <div id="col00"></div>
+        <div id="col1"> 
+            <p id="icone">
+                <a href="https://rp.registroponto.com.br/Login/Index?ReturnUrl=%2f" target="_blank"><img src="imagens/icones/relogio_de_ponto.jpeg" width="75" height="75"></a>
+                <br>
+                Ponto              
+            </p>          
+            
+            <p id="icone">
+                <a href="https://ajuda.sienge.com.br/pt-BR/support/home" target="_blank"><img src="imagens/icones/ajuda_sienge.png" width="75" height="75"></a>
+                <br>
+                Ajuda
+            </p>           
+        </div>
+        <div id="col0"></div>
+        <div id="col2">
+            <p id="icone">
+                <a href="https://vertentesistemas-my.sharepoint.com/:x:/r/personal/higor_fragnani_vertentesistemas_com_br/_layouts/15/Doc.aspx?sourcedoc=%7B30DC3E00-A07B-4BA5-AA36-02AC46E8FB22%7D&file=CONTROLE%20DE%20PROJETOS%20VERTENTE%202026.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&web=1" target="_blank"><img src="imagens/icones/apontamentos.png" width="75" height="75"></a>
+                <br>
+                Apontamentos
+            </p>          
+           
+            <p id="icone">
+                <a href="https://educa.sienge.com.br/lms/#/aula/17960/c/4059?idtrilha=14#topico_4059" target="_blank"><img src="imagens/icones/educa_sienge.png" width="75" height="75"></a>
+                <br>
+                Educa
+            </p>           
+        </div>
+        <div id="col0"></div>
+        <div id="col3">
+            <p id="icone">
+                <a href="https://painel.autentique.com.br/pastas" target="_blank"><img src="imagens/icones/autentique.png" width="75" height="75"></a>
+                <br>
+                Autentique
+            </p>          
+           
+            <p id="icone">
+                <a href="https://docs.google.com/document/d/1-HQ77doofaWz679MesRuLtJLyNiSAUs1jEjw8W120o8/edit?tab=t.0#heading=h.ocpa1z1rrqfg" target="_blank"><img src="imagens/icones/RAT.png" width="75" height="75"></a>
+                <br>
+                RAT
+            </p>           
+        </div>
+        <div id="col0"></div>
+        <div id="col4">
+            <p id="icone">
+                <a href="https://gemini.google.com/" target="_blank"><img src="imagens/icones/gemini.png" width="75" height="75"></a>
+                <br>
+                Gemini
+            </p>          
+            
+            <p id="icone">
+                <a href="https://app2.artia.com/users/login" target="_blank"><img src="imagens/icones/artia.png" width="75" height="75"></a>
+                <br>
+                Artia
+            </p>      
+        </div>
+        <div id="col0"></div>
+        <div id="col5">
+            <p id="icone">
+                <a href="G:\Meu Drive\Despesas" target="_blank"><img src="imagens/icones/despesas.jpeg" width="75" height="75"></a>
+                <br>
+                Despesas
+            </p>          
+           
+            <p id="icone">
+                <a href="pags/contabil.html" target="_blank"><img src="imagens/icones/caduceu.jpg" width="75" height="75"></a>
+                <br>
+                Contabilidade
+            </p>           
+        </div>
+        <div id="col0"></div>
+        <div id="col6">
+            <p id="icone">
+                <a href="https://2gsolucoes3.sienge.com.br/sienge/8/index.html#/" target="_blank"><img src="imagens/icones/plataforma_sienge.png" width="75" height="75"></a>
+                <br>
+                Sienge
+            </p>          
+           
+            <p id="icone">
+               <a href="pags/utilidades.html" target="_blank"><img src="imagens/icones/utilidades.png" width="75" height="75"></a>
+               <br>
+                Utilidades
+            </p>           
+        </div>     
+    </div>    
+
+    
+
+      
+   
+    <div id="fundo"></div>
+    
+</body>
+<footer>
+    <footer>
+        <p style="text-align: center;">Desenvolvido por <b>Alexandre Barbosa</b> +55 (31) 9.8792-4184</p>
+      </footer>
+</footer>
+</html>
