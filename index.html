@@ -35,48 +35,11 @@
     <span id="papel"> </span> 
 
     <script>	
-        let numPapel = Math.random();
-        if(numPapel >= 0.95) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/1.css"></link>';
-        }else if (numPapel >= 0.90) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/2.css"></link>';
-        }else if (numPapel >= 0.85) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/3.css"></link>';        
-        }else if (numPapel >= 0.80) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/4.css"></link>';        
-        }else if (numPapel >= 0.75) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/5.css"></link>';
-        }else if (numPapel >= 0.70) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/6.css"></link>';
-        }else if (numPapel >= 0.65) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/7.css"></link>';
-        }else if (numPapel >= 0.60) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/8.css"></link>';
-        }else if (numPapel >= 0.55) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/9.css"></link>';
-        }else if (numPapel >= 0.50) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/10.css"></link>';
-        }else if (numPapel >= 0.45) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/11.css"></link>';
-        }else if (numPapel >= 0.40) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/12.css"></link>';
-        }else if (numPapel >= 0.35) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/13.css"></link>';
-        }else if (numPapel >= 0.30) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/14.css"></link>';
-        }else if (numPapel >= 0.25) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/15.css"></link>';        
-        }else if (numPapel >= 0.20) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/16.css"></link>';        
-        }else if (numPapel >= 0.15) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/17.css"></link>';
-        }else if (numPapel >= 0.10) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/18.css"></link>';
-        }else if (numPapel >= 0.05) {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/19.css"></link>';
-        }else {
-            document.getElementById('papel').innerHTML = '<link rel="stylesheet" href="estilos/20.css"></link>';
-        }    
+     
+        let numPapel  = Math.floor(Math.random() * 21);        
+        document.getElementById('papel').innerHTML = `<link rel="stylesheet" href="estilos/${numPapel}.css"></link>`;
+       /* document.getElementById('papel').style.backgroundImage = `url('imagens/fundos/${numPapel}.png')`;*/
+
     </script>    
 </head>    
 <body>
