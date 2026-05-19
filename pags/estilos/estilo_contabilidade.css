@@ -35,6 +35,8 @@ footer {
   bottom: 0;
   width: 100%;
   height: fit-content;
+  color: red;
+  background-color: black;
 }
 
 #total {
