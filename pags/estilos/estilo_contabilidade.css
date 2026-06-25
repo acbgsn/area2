@@ -16,6 +16,9 @@ p {
 h1 {
   text-align: center;
   color: darkblue;
+  font-family:cursive;
+  font-size: 350%;
+  font-style: italic;
 }	  
 
 h2 {
