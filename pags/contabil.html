@@ -11,9 +11,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <span id="papel"> </span> 
+     <script>     
+        let numPapel  = Math.floor(Math.random() * 4);        
+        document.getElementById('papel').innerHTML = `<link rel="stylesheet" href="estilos/${numPapel}.css"></link>`;  
+    </script>
 	<link rel="stylesheet" href="estilos/estilo_contabilidade.css"/>
 	<link rel="icon" href="imagens/caduceu.jpg" sizes="any">
-    <title>Contabilidade</title>
+    <title>Contabilidade</title>    
   </head>
   <body>
 	<div id="div1">
