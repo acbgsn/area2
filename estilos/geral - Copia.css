@@ -82,8 +82,48 @@ footer {
   background-color:transparent;  
 }
 
-#cola, #colb, #colc, #cold, #cole, #colf, #colg, #colh, #coli, #colj  {
-  width: 10%;
+#col1 {
+  width: auto;
+  float: left;  
+}
+
+#col2 {
+  width: auto;
+  float: left;  
+}
+
+#col3 {
+  width: auto;
+  float: left; 
+}
+
+#col4 {
+  width: auto;
+  float: left;  
+}   
+
+#col5 {
+  width: auto;
+  float: left;  
+}   
+
+#col6 {
+  width: auto;
+  float: left;  
+}
+
+#col7 {
+  width: auto;
+  float: left;  
+}
+
+#col8 {
+  width: auto;
+  float: left;  
+}
+
+#col9 {
+  width: auto;
   float: left;  
 }
 
