@@ -122,6 +122,11 @@ footer {
   float: left;  
 }
 
+#col9 {
+  width: auto;
+  float: left;  
+}
+
 #col0 {
   width: 9.35%;
 }
