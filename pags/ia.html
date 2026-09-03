@@ -13,7 +13,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <span id="papel"> </span> 
      <script>     
-        let numPapel  = Math.floor(Math.random() * 1);        
+        let numPapel  = Math.floor(Math.random() * 3);        
         document.getElementById('papel').innerHTML = `<link rel="stylesheet" href="estilos/ia/${numPapel}.css"></link>`;
     </script>
 	<link rel="stylesheet" href="estilos/estilo_ia.css"/>
@@ -22,9 +22,16 @@
   </head>
   <body>
 	<div id="div1">
+        <div>            
+            <h1 style="height: 100%; width: 100%;">
+                 <span><img src="imagens/logos_ias.gif" width="50" height="50"></span>
+                 IA 
+                 <span><img src="imagens/robo_ideia.gif" width="50" height="50"></span>
+                </h1>
+        </div> 
         <div>
-            <h1 style="height: 100%; width: 100%;">IA</h1>
-        </div>        
+            
+        </div>       
        	<p id="imagem"></p>
         <br>
         <br>
@@ -142,7 +149,7 @@
            </div>           
 	</div>	
     <div style="min-height: 200PX;"></div>
-    <div id="papelContabil"></div>
+    <div id="papelIA"></div>
     
   </body>
   <footer>
