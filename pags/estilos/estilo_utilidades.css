@@ -1,5 +1,5 @@
 body {  
-  background-image: url("../imagens/cachoeira.gif");
+  background-image: url("../imagens/gota_agua.gif");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@ p {
   
 h1 {
   text-align: center;
-  color:red;
+  color:darkblue;
 }	  
 
 h2 {
@@ -28,7 +28,7 @@ h2 {
   
 h3 {
   margin-left: 1em;
-  color:red;
+  color:blue;
   text-align: center;
 }
 
