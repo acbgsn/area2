@@ -1,6 +1,10 @@
-body {
-  
-  background-image: url("/Apps/Autorais/mesa/pags/imagens/fundo.jpg");
+body {  
+  background-image: url("../imagens/cachoeira.gif");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
 }
 
 
@@ -15,7 +19,7 @@ p {
   
 h1 {
   text-align: center;
-  color: darkblue;
+  color:red;
 }	  
 
 h2 {
@@ -24,7 +28,7 @@ h2 {
   
 h3 {
   margin-left: 1em;
-  color:darkblue;
+  color:red;
   text-align: center;
 }
 
