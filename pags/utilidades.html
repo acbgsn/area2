@@ -11,10 +11,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-	<link rel="stylesheet" href="../pags/estilos/estilo_utilidades.css"/>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>	
 	<link rel="icon" href="../imagens/icones/utilidades.png" sizes="any">
+    <meta http-equiv="refresh" content="60">
     <title>Utilidades</title>
+
+    <link rel="stylesheet" href="../pags/estilos/estilo_utilidades.css"/>
+
+    <span id="papel"> </span> 
+
+    <script>	
+        let numPapel  = Math.floor(Math.random() * 5);        
+        document.getElementById('papel').innerHTML = `<link rel="stylesheet" href="estilos/util/${numPapel}.css"></link>`;   
+    </script>
+
   </head>
   <body>
 	<div id="div1">

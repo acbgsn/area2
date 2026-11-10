@@ -1,0 +1,19 @@
+body {  
+  background-image: url("2.gif");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}	
+
+h3 {
+  margin-left: 1em;
+  color: black;
+  text-align: center;
+}
